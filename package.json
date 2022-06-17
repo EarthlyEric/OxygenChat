@@ -1,0 +1,26 @@
+{
+  "name": "oxygenchat",
+  "version": "1.0.0",
+  "description": "A Video/Voice Chat with WebRTC P2P.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start":"node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EarthlyEric/OxygenChat.git"
+  },
+  "author": "EarthlyEric6",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EarthlyEric/OxygenChat/issues"
+  },
+  "homepage": "https://github.com/EarthlyEric/OxygenChat#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "socket.io": "^4.5.1"
+  }
+}
