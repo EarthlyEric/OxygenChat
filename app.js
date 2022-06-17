@@ -13,7 +13,10 @@ const peerServer = ExpressPeerServer(server, {
 });
 
 // Routing.
-app.use(express.static(path.join(__dirname, 'web'))); 
+//Web
+app.use('/',express.static(path.join(__dirname, 'web')));
+//WebRTC PeerServer
+app.use('/api',peerServer)
 
 
 server.listen(port, () => {
