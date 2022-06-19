@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const http = require('http');
 const { ExpressPeerServer } = require('peer');
-const port = process.env.PORT || 80; //Set up http port.
+const port = process.env.PORT || 443; //Set up http port.
 const db = './database.db';
 
 const app = express();
