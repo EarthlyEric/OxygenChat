@@ -1,11 +1,8 @@
 html{
     background-color: #110939;
 }
-input{
-    outline-style: none ;
-    border: 3px solid rgb(0, 0, 0); 
-    border-radius: 5px;
-    padding: 10px 5px;
+h1{
+    font-size: 30px;
 }
 .card {
     position: center;
@@ -17,7 +14,7 @@ input{
     border: 5px solid #000;
     background: #f0e68c;
     background-blend-mode: normal;
-    box-shadow: 20px 25px rgba(240,230,140,0.75);
+    box-shadow: 10px 10px rgba(240,230,140,0.75);
 }
 .click-button {
     font-family: "Open Sans", sans-serif;
