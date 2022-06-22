@@ -3,3 +3,4 @@ document.getElementById('setUsername').onclick = function () {
     sessionStorage.setItem('Username', UsernameValue);
     document.location.href = '/room';
   }
+
