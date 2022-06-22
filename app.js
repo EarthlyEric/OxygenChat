@@ -22,6 +22,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname+'/web/index.html'));
 });
 
+app.get('/create_room', function(req,res){
+  res.sendFile(path.join(__dirname+'/web/create_room.html'))
+});
+
 app.get('/room', function(req,res){
   res.sendFile(path.join(__dirname+'/web/room.html'))
 });
