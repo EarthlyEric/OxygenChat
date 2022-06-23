@@ -5,8 +5,6 @@
         <meta charset="UTF-8">
         <link rel="icon" type="img/png" href="img/OxygenChat-Icon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--PeerJs-->
-        <script src="/js/peerjs.min.js"></script>
         <!--Fontawesome-->
         <link rel="stylesheet" href="/css/fontawesome.min.css"/>
         <!--UIKit-->
@@ -29,16 +27,22 @@
                         <div>
                             <div class="input_box">
                                 <input type="text" id="Username" class="input" autocomplete="off" placeholder=" ">
-                                <label class="label"><i class="fas fa-user"></i> Username</label>
+                                <label class="label"><i class="fas fa-user"></i>&nbspUsername</label>
                             </div>
                         </div>
                         <div>
-                            <button class="click-button" id="setUsername">Join</button>
+                            <button class="click-button" id="setUsername">Join&nbsp<i class="fas fa-sign-in-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="uk-grid-column-large uk-grid-row-large uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                        <div>
+                            <button class="click-button" onclick="onButtonToRedirect('/')"><i class="fas fa-angle-left"></i>&nbspGo Back</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <script src="/js/lib.js"></script>
+        <script src="/js/create_room.js"></script>
     </body>
 </html>

@@ -1,6 +1,10 @@
-document.getElementById('setUsername').onclick = function () {
-    let UsernameValue = document.getElementById("Username").value; 
-    sessionStorage.setItem('Username', UsernameValue);
-    document.location.href = '/room';
-  }
-
+function onButtonToRedirect(path){
+  document.location.href = path;
+}
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('/logo.txt')
+  .then(response => response.text())
+  .then((data) => {
+    console.log(data)
+  })
+}, false);
