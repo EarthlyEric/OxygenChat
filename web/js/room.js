@@ -1,4 +1,4 @@
-var UsernameValue = sessionStorage.getItem("Username");
+var UsernameValue = sessionStorage.getItem('Username');
 
 function initialize(){
   if(sessionStorage.getItem('Username')!=null){
@@ -13,12 +13,12 @@ function initialize(){
           port: 443,
           path: '/api/webrtc'
         });
-      peer.on("open", function (id) {
-        document.getElementById("uuid").textContent = "Room ID: "+peer.id;
-        document.getElementById("Username").textContent = "Username: "+UsernameValue;
+      peer.on('open', function (id) {
+        document.getElementById('uuid').textContent = 'Room ID: '+peer.id;
+        document.getElementById('Username').textContent = 'Username: '+UsernameValue;
       });
   }else{
     document.location.href = '/';
   }
 }
-initialize()
+initialize();

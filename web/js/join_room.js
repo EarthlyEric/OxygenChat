@@ -6,7 +6,7 @@ document.getElementById('Join').onclick = function () {
         if(UsernameValue!=''){
             sessionStorage.setItem('Username', UsernameValue);
             sessionStorage.setItem('UUID','')
-            sessionStorage.setItem('UserType','RoomHoster')
+            sessionStorage.setItem('UserType','Visitor')
             document.location.href = '/room';
         }else if(UsernameValue===''){
             alert('Please Set Username !');
