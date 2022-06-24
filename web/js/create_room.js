@@ -5,10 +5,10 @@ document.getElementById('setUsername').onclick = function () {
     }else{
         if(UsernameValue!=''){
             sessionStorage.setItem('Username', UsernameValue);
+            sessionStorage.setItem('UUID','')
             document.location.href = '/room';
         }else if(UsernameValue===''){
             alert('Please Set Username !');
         }
     }
-
   }

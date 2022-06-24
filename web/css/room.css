@@ -1,3 +1,45 @@
 html{
     background-color: #110939;
 }
+.card {
+    position: center;
+    left: 0px;
+    top: 0px;
+    width: 80vw;
+    height: 75vh;
+    border-radius: 25px;
+    border: 5px solid #62faff;
+    background: #f0e68c;
+    background-blend-mode: normal;
+}
+.bar {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 80vw;
+    height: 10vh;
+    border-radius: 25px;
+    border: 5px solid #62faff;
+    background: #f0e68c;
+    background-blend-mode: normal;
+}
+#local-user {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 60vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin: 16px;
+    border: 2px solid #fff;
+}
+#remote-user {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 60vh;
+    width: 75vh;
+    border-radius: 25px;
+    border: 5px solid #62faff;
+    background-blend-mode: normal;
+}

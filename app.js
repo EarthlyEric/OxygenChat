@@ -3,15 +3,14 @@ const path = require('path');
 const http = require('http');
 const { ExpressPeerServer } = require('peer');
 const port = process.env.PORT || 443; //Set up http port.
-const db = './database.db';
 
 const app = express();
 const server = http.createServer(app);
+//PeerServer
 const peerServer = ExpressPeerServer(server, {
   debug: true,
   path: '/webrtc'
 });
-
 // Routing.
 //Web
 app.use(express.static('web'));

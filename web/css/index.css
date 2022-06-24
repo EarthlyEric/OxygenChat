@@ -1,6 +1,9 @@
 html{
     background-color: #110939;
 }
+p{
+  color: black;
+}
 .click-button {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
