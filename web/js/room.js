@@ -16,7 +16,7 @@ function initialize(){
         path: '/api/webrtc'
         });
       peer.on('open', function (id) {
-        document.getElementById('uuid').textContent = 'Room ID: '+peer.id;
+        document.getElementById('uuid').textContent = peer.id;
         document.getElementById('Username').textContent = 'Username: '+UsernameValue;
         });
     }else{
@@ -26,5 +26,12 @@ function initialize(){
     
   }
 
+}
+function copyUUID(){
+  if (navigator.clipboard) {
+    var uuid = sessionStorage.getItem('UUID');
+    navigator.clipboard.writeText(uuid)
+    UIkit.notification('<i class="fas fa-copy"></i> Copy UUID Sucessful',{status:'success'});
+  }
 }
 initialize();

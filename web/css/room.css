@@ -1,9 +1,10 @@
 html{
     background-color: #110939;
 }
-span{
+span,p{
     color: black;
 }
+
 .card {
     position: center;
     left: 0px;
