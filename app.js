@@ -19,6 +19,7 @@ app.use('/api',peerServer);
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname+'/web/index.html'));
+  console.log("Get")
 });
 
 app.get('/create_room', function(req,res){
